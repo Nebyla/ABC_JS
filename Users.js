@@ -1,5 +1,4 @@
-let arr = [1, 2, 3, 4, 5];
-console.log( arr.filter(elem => elem % 2 == 0).length );
+let arr = [2, 4, 6, 8];
 
-let arr1 = [1, 2, 3, 4, 5];
-console.log( arr.filter(elem => elem % 2 == 0) );
+let result = arr.every(elem => elem % 2 == 0);
+console.log(result);
