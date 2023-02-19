@@ -1,13 +1,9 @@
-function func(arr) {
-	for (let i = 0; i < arr.length; i++) {
-		if (typeof arr[i] == 'object') {
-			arr[i] = func(arr[i]);
-		} else {
-			arr[i] = arr[i] * arr[i];
-		}
-	}
-	
-	return arr;
-}
+let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-console.log(func([1, [2, 7, 8], [3, 4, [5, 6]]]));
+let result = arr.map(function(elem) {
+	return elem.map(function(num) {
+		return num * num;
+	});
+});
+
+console.log(result);
