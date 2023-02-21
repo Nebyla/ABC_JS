@@ -1,6 +1,5 @@
-
 let arr = ['Yunus', 'Mustafaev', 'development', 'programmer', 2000];
 
-let [name, , , ,] = arr
+let [name, surname, develop, ...d] = arr
 
-console.log(name)
+console.log(d)
