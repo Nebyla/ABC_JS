@@ -1,11 +1,7 @@
-let obj = {
-	year:  2023,
-	month: 2,
-	day:   21,
-};
+function func({year, month, day}) {
+	console.log(year);  
+	console.log(month); 
+	console.log(day);   
+}
 
-let year, month, day;
-
-({year, month, day} = obj)
-
-console.log(day)
+func({year: 2025, month: 12, day: 31,});
