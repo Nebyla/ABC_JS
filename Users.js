@@ -1,4 +1,4 @@
-let arr = [2, 4, 6, 8];
+let arr = [-1, 1, 5, -2, 10, -5, -7, 15, -20, 2];
 
-let result = arr.some(elem => elem % 2 == 0);
-console.log(result);
+let result = Math.max(...arr)
+console.log(result)
