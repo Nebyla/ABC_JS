@@ -1,5 +1,6 @@
-function func() {
-	return (String((new Date).getFullYear()) + " " + String((new Date).getMonth()+1) + " " + String((new Date).getDate()));
-}
+let arr = [2023, 2, 21];
+let year;
+let month;
+let day;
 
-console.log(func())
+[year, month, day] = arr;
