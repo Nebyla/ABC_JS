@@ -1,7 +1,5 @@
-function func({year, month, day}) {
-	console.log(year);  
-	console.log(month); 
-	console.log(day);   
-}
+let date = new Date();
 
-func({year: 2025, month: 12, day: 31,});
+console.log(date.getFullYear()); 
+console.log(date.getMonth()+1);    
+console.log(date.getDate());  
