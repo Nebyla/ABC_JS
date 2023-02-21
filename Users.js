@@ -3,6 +3,6 @@ let options = {
 	height: 500,
 };
 
-let {color = 'black', width: w, height: h} = options;
+let {color: c = 'black', width: w, height: h} = options;
 
-console.log(color)
+console.log(c)
