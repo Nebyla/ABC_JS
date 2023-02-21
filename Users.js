@@ -1,4 +1,6 @@
-let arr = [-1, 1, 5, -2, 10, -5, -7, 15, -20, 2];
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5, 6];
+let arr3 = [...arr2, 7, 8, 9];
 
-let result = Math.max(...arr)
-console.log(result)
+let arr  = [0, ...arr3];
+console.log(arr);
