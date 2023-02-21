@@ -1,6 +1,5 @@
-let arrs   = [ [1, 2, 3,] [4, 5, 6], [7, 8, 9] ];
-function merge(...arrs) {
-	return [].concat(...arrs);
-}
-let result = merge([1, 2, 3], [4, 5, 6], [7, 8, 9]);
-console.log(result);
+let arr = ['Yunus', 'Mustafaev', 'development', 'programmer', 2000];
+
+let [name, surname, department, position, salary] = arr
+
+console.log(name)
