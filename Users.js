@@ -1,13 +1,4 @@
-let date = '03-20';
+let date1 = new Date(2020, 1, 1);
+let date2 = new Date(2021, 1, 1);
 
-if (date >= '01-01' && date <= '03-08') {
-	console.log('Водолей');
-}
-
-if (date >= '03-09' && date <= '06-17') {
-	console.log('Рыбы');
-}
-
-if (date >= '06-18' && date <= '12-31') {
-	console.log('Козерог');
-}
+console.log(date1 > date2);
