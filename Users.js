@@ -1,4 +1,13 @@
-let arr = [2, 4, 6, 8];
+let date = new Date(); 
+let month = date.getMonth();
 
-let result = arr.some(elem => elem % 2 == 0);
-console.log(result);
+let months = [
+'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+];
+
+while (month > 11) {
+    month -= 12; 
+}
+
+console.log(months[month]);
