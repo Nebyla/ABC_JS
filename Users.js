@@ -1,4 +1,4 @@
-let date = new Date(2004, 11, 6);
+let date = new Date(2004, 3, 5);
 let day  = date.getDay();
 let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
 
