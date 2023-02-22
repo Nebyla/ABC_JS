@@ -1,14 +1,13 @@
-function isLeap(){
-    if (new Date().getFullYear() == 12) {
-	    return true;
-    } 
-    else {
-	    return false;
-    }
+let date = '03-20';
+
+if (date >= '01-01' && date <= '03-08') {
+	console.log('Водолей');
 }
-if (isLeap == true){
-    console.log("Високосный")
+
+if (date >= '03-09' && date <= '06-17') {
+	console.log('Рыбы');
 }
-else{
-    console.log('Обычный')
+
+if (date >= '06-18' && date <= '12-31') {
+	console.log('Козерог');
 }
