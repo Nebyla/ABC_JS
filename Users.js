@@ -1,6 +1,6 @@
 let now  = new Date();
-let date = new Date(1988, 1, 4, 23, 59, 59);
-let data = new Date(2000, 10, 2, 23, 59, 59);
+let date = new Date(2000, 9, 25, 12, 59, 59);
+let data = new Date(2010, 2, 15, 12, 59, 59);
 
-let diff = data.getTime() - date.getTime();
-console.log(diff / (1000 * 60 * 60));
+let diff = now - date; 
+console.log(diff); 
