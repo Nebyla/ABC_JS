@@ -1,13 +1,7 @@
-let button1 = document.querySelector('#elem');
-let button2 = document.querySelector('#but');
+let elems = document.querySelectorAll('p');
 
-button2.addEventListener('click', function func(){
-	if (button1.style.color == 'black'){
-		button1.style.color = 'red';
-		console.log('red')
-	}
-	else{
-		button1.style.color = 'black';
-		console.log('black')
-	}
-})
+for (let elem of elems) {
+	elem.addEventListener('click', function() {
+		this.classList.add('colored');
+	});
+}
