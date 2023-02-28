@@ -1,3 +1,5 @@
-let elem = document.querySelector('#elem');
-let parent = elem.closest('.www');
-console.log(parent.id);
+let elems = document.getElementsByClassName('www');
+
+for (let elem of elems) {
+	elem.innerHTML = '!!!';
+}
