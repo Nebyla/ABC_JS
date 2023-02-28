@@ -1,6 +1,12 @@
-let button = document.querySelector('button');
-let elem   = document.querySelector('p');
+var elem = document.getElementById('task');
+elem.addEventListener('click', func);
+var elem1 = document.getElementsByClassName('cls');
 
-button.addEventListener('click', function() {
-	elem.innerHTML = '<b>Yunus Mustafaev</b>';
-});
+function func() {
+	var sum = 0;
+	for (var i = 0; i < elem1.length; i++) {
+		sum += +elem1[i].value;
+	}
+	var newElem = document.getElementById('sum');
+	newElem.value = sum;
+}    
