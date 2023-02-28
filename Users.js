@@ -1,7 +1,3 @@
-let elems = document.querySelectorAll('p');
-
-for (let elem of elems) {
-	elem.addEventListener('click', function() {
-		this.classList.add('colored');
-	});
-}
+let elem = document.querySelector('#elem');
+let parent = elem.closest('.www');
+console.log(parent.id);
