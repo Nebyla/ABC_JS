@@ -1,5 +1,3 @@
-let elems = document.getElementsByClassName('www');
-
-for (let elem of elems) {
-	elem.innerHTML = '!!!';
-}
+let parent = document.querySelector('#parent');
+let elems1 = parent.querySelectorAll('.www')
+let elems2 = parent.querySelectorAll('.ggg')
