@@ -1,12 +1,6 @@
-let elems = document.querySelectorAll('li');
-let sum = 0;
+let button = document.querySelector('button');
+let elem   = document.querySelector('p');
 
-for (let elem of elems) {
-	let text = +elem.textContent;
-	
-	if (text % 6 === 0) {
-		sum += text;
-	}
-}
-
-console.log(sum);
+button.addEventListener('click', function() {
+	elem.innerHTML = '<b>Yunus Mustafaev</b>';
+});
