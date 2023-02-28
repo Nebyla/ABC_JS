@@ -1,12 +1,7 @@
-var elem = document.getElementById('task');
-elem.addEventListener('click', func);
-var elem1 = document.getElementsByClassName('cls');
+let elem = document.querySelector('#elem');
+let text = document.querySelector('p')
 
-function func() {
-	var sum = 0;
-	for (var i = 0; i < elem1.length; i++) {
-		sum += +elem1[i].value;
-	}
-	var newElem = document.getElementById('sum');
-	newElem.value = sum;
-}    
+elem.addEventListener('blur', function func(){
+	text.textContent += ' ' + elem.value;
+	elem.value = ' ';
+})
