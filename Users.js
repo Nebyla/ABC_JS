@@ -1,5 +1,8 @@
 let elem = document.querySelector('#elem');
 
-elem.addEventListener('change', function() {
-	console.log(this.value);
+elem.addEventListener('input', function() {
+	if (this.value.length > 5) {
+    	console.log(elem.value);
+	}
+		
 });
