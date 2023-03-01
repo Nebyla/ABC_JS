@@ -1,16 +1,7 @@
-let elem   = document.querySelector('#elem');
-let elem1   = document.querySelector('#elem1');
+let select = document.querySelector('#select');
+let but = document.getElementsByTagName('#button');
+let inp = document.getElementsByTagName('#input');
 
-
-elem.addEventListener('input', function func(){
-	if (elem.value.length === 2){
-		elem1.focus();
-	}
-})
-
-elem1.addEventListener('input', function func1(){
-	if (elem1.value.length === 2){
-		console.log('ggg')
-		elem1.blur();
-	}
-})
+but.addEventListener('change', function(){
+	console.log(this.value);
+});
