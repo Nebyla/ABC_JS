@@ -1,7 +1,6 @@
 let select = document.querySelector('#select');
-let but = document.getElementsByTagName('#button');
-let inp = document.getElementsByTagName('#input');
+let button = document.querySelector('#button');
 
-but.addEventListener('change', function(){
-	console.log(this.value);
+button.addEventListener('click', function() {
+	select.value = 'one';
 });
