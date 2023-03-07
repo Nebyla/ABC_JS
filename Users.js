@@ -1,6 +1,6 @@
-let elem = document.querySelector('#elem');
+let elem = document.querySelector('input');
 
-elem.addEventListener('click', function(event) {
-	console.log(event.target); 
-	console.log(this);         
+elem.addEventListener('keypress', function(event) {
+	console.log(event.key);
+	console.log(event.code);
 });
