@@ -1,2 +1,10 @@
-let select = document.querySelector('#select');
-console.log(select[select.selectedIndex]);
+let checkbox = document.querySelector('[type="checkbox"]');
+let button = document.querySelector('button');
+
+button.addEventListener('click', function() {
+	if (checkbox.checked = true) {
+		console.log('+++');
+	} else {
+		console.log('---');
+	}
+});
