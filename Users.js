@@ -1,10 +1,8 @@
-let checkbox = document.querySelector('[type="checkbox"]');
-let button = document.querySelector('button');
+let elem = document.querySelector('#elem');
 
-button.addEventListener('click', function() {
-	if (checkbox.checked = true) {
-		console.log('+++');
-	} else {
-		console.log('---');
+elem.addEventListener('click', function(event) {
+	console.log(event);
+	if (event.ctrlKey == true){
+		console.log('Ctrl Clicked')
 	}
 });
