@@ -7,21 +7,17 @@
     <title>Yunus</title>
 </head>
 <body>
-    <div>
-        <p></p>
+    <div id="parent">
+        <button>click me</button>
+        <div id="block">
+            text
+        </div>
     </div>
 </body>
 <script src="Users.js"></script>
 <style>
-   div {
-    padding: 20px;
-    border: 1px solid red;
-}
-
-p {
-    width: 200px;
-    height: 200px;
-    border: 1px solid green;
+#block:not(.active ) {
+	display: none;
 }
 </style>
 
